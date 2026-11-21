@@ -1,0 +1,8 @@
+{
+  "name": "am-premium",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": { "start": "node api/index.js" },
+  "dependencies": { "express": "^4.19.2" },
+  "engines": { "node": ">=18" }
+}

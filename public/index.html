@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AM Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+
+<main class="card">
+  <section id="auth">
+    <h1>AM Premium</h1>
+    <p class="sub">Login dulu untuk mengaktifkan Alight Motion Pro. Setiap akun dapat 3 kredit per 24 jam.</p>
+    <div class="tabs"><button id="tL" class="on">Login</button><button id="tR">Daftar</button></div>
+    <label for="u">Username</label><input id="u" autocomplete="username">
+    <label for="p">Password</label><input id="p" type="password" autocomplete="current-password">
+    <button class="btn" id="go">Login</button>
+    <div class="msg" id="m1" role="status"></div>
+  </section>
+
+  <section id="app" class="hide">
+    <div class="top"><span class="pill">Kredit <b id="cr">0</b>/3</span><button class="out" id="lo">Keluar</button></div>
+    <h1>Aktifkan Premium</h1>
+    <p class="sub" id="rs">Dua langkah: kirim email verifikasi, lalu tempel link-nya.</p>
+
+    <div class="step">
+      <h2>Kirim email verifikasi</h2><p>Memakai 1 kredit. Gunakan email akun Alight Motion.</p>
+      <label for="em">Email</label><input id="em" type="email" autocomplete="email" placeholder="nama@email.com">
+      <button class="btn" id="s1">Kirim link</button>
+    </div>
+    <div class="step">
+      <h2>Aktifkan dengan link</h2><p>Tempel link verifikasi atau oobCode dari email.</p>
+      <label for="lk">Link atau oobCode</label><input id="lk" placeholder="https://...">
+      <button class="btn ghost" id="s2">Aktifkan premium</button>
+    </div>
+    <div class="msg" id="m2" role="status"></div>
+  </section>
+</main>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
